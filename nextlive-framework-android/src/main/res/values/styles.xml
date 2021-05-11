@@ -1,0 +1,56 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- __Animation__ -->
+
+    <!-- Dialog -->
+    <style name="Animation.Dialog.Fade" parent="@style/Base.Animation.AppCompat.Dialog">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+    <style name="Animation.Dialog.SlideUp" parent="@style/Base.Animation.AppCompat.Dialog">
+        <item name="android:windowEnterAnimation">@anim/slide_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_to_bottom</item>
+    </style>
+    <style name="Animation.Dialog.ZoomTR" parent="@style/Base.Animation.AppCompat.Dialog">
+        <item name="android:windowEnterAnimation">@anim/zoom_from_top_right</item>
+        <item name="android:windowExitAnimation">@anim/zoom_to_top_right</item>
+    </style>
+
+    <!-- __Theme__ -->
+
+    <!-- Dialog -->
+    <style name="Theme.Dialog.Fade" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/Animation.Dialog.Fade</item>
+    </style>
+    <style name="Theme.Dialog.Fade.Dim" parent="@style/Theme.Dialog.Fade">
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="Theme.Dialog.SlideUp" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/Animation.Dialog.SlideUp</item>
+    </style>
+    <style name="Theme.Dialog.SlideUp.Dim" parent="@style/Theme.Dialog.SlideUp">
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="Theme.Dialog.ZoomTR" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/Animation.Dialog.ZoomTR</item>
+    </style>
+    <style name="Theme.Dialog.ZoomTR.Dim" parent="@style/Theme.Dialog.ZoomTR">
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- Appication Theme -->
+    <style name="AppTheme" parent="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <item name="@android:windowBackground">@null</item>
+        <item name="@android:windowNoTitle">true</item>
+        <item name="@android:windowIsFloating">false</item>
+        <item name="@android:windowContentOverlay">@null</item>
+        <item name="@android:windowShowWallpaper">false</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustUnspecified</item>
+        <item name="@android:windowActionBar">false</item>
+    </style>
+
+</resources>

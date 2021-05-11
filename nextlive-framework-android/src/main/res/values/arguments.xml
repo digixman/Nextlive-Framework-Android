@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Animation -->
+    <item name="nl_anim_duration" type="integer">350</item>
+
+    <!-- nl_back_line_bottom -->
+    <color name="nl_back_line_bottom_line">@color/nl_primary</color>
+    <color name="nl_back_line_bottom_back">@color/nl_text_light</color>
+    <dimen name="nl_back_line_bottom_height">1dp</dimen>
+
+    <!-- nl_back_line_left -->
+    <color name="nl_back_line_left_line">@color/nl_primary</color>
+    <color name="nl_back_line_left_back">@color/nl_text_light</color>
+    <dimen name="nl_back_line_left_width">1dp</dimen>
+
+    <!-- nl_back_line_top -->
+    <color name="nl_back_line_top_line">@color/nl_primary</color>
+    <color name="nl_back_line_top_back">@color/nl_text_light</color>
+    <dimen name="nl_back_line_top_height">1dp</dimen>
+
+    <!-- nl_dot_highlight -->
+    <color name="nl_dot_highlight">@color/nl_primary</color>
+    <dimen name="nl_dot_highlight_size">@dimen/nl_padding</dimen>
+
+    <!-- nl_dot_normal -->
+    <color name="nl_dot_normal">@color/nl_text_light_gray</color>
+    <dimen name="nl_dot_normal_size">@dimen/nl_padding</dimen>
+
+    <!-- nl_sel_oval -->
+    <color name="nl_sel_oval_normal">@color/nl_primary</color>
+    <color name="nl_sel_oval_pressed">@color/nl_primary_dark</color>
+
+    <!-- nl_sel_rect_rounded -->
+    <color name="nl_sel_rect_rounded_normal">@color/nl_primary</color>
+    <color name="nl_sel_rect_rounded_pressed">@color/nl_primary_dark</color>
+    <dimen name="nl_sel_rect_rounded_radius">@dimen/nl_padding</dimen>
+
+    <!-- nl_sel_oval_outline -->
+    <color name="nl_sel_oval_outline_normal">@color/nl_primary</color>
+    <color name="nl_sel_oval_outline_pressed">@color/nl_primary_dark</color>
+    <dimen name="nl_sel_oval_outline_stroke_size">@dimen/nl_padding</dimen>
+
+</resources>

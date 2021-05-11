@@ -1,0 +1,15 @@
+<resources>
+    <!-- General -->
+    <dimen name="nl_padding">8dp</dimen>
+    <dimen name="nl_padding_sm">4dp</dimen>
+    <dimen name="nl_padding_sm2">2dp</dimen>
+    <dimen name="nl_padding_lg">16dp</dimen>
+    <dimen name="nl_padding_2lg">32dp</dimen>
+
+    <dimen name="nl_upadding">-8dp</dimen>
+    <dimen name="nl_upadding_sm">-4dp</dimen>
+    <dimen name="nl_upadding_sm2">-2dp</dimen>
+    <dimen name="nl_upadding_lg">-16dp</dimen>
+    <dimen name="nl_upadding_2lg">-32dp</dimen>
+
+</resources>
