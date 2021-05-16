@@ -4,11 +4,38 @@ import com.nextlive.framework.global.BaseApp;
 
 import android.content.res.ColorStateList;
 import android.content.res.Resources;
+import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
+import android.widget.TextView;
 
 import androidx.core.app.ActivityCompat;
+import androidx.core.content.res.ResourcesCompat;
 
 public class ResUtils {
+
+    public static void setFontFromAsset(TextView view, String font) {
+        view.setTypeface(
+                Typeface.createFromAsset(
+                        view.getContext().getAssets(),
+                        font));
+    }
+
+    public static void setFont(TextView view, int resId) {
+        view.setTypeface(
+                ResourcesCompat.getFont(
+                        BaseApp.getInstance(),
+                        resId));
+    }
+
+    public static void setFont(TextView view, String font) {
+        view.setTypeface(
+                ResourcesCompat.getFont(
+                        BaseApp.getInstance(),
+                        BaseApp.getInstance().getResources().getIdentifier(
+                                font,
+                                "font",
+                                BaseApp.getInstance().getPackageName())));
+    }
 
     public static String getString(int resId) {
         return BaseApp.getInstance().getResources().getString(resId);
@@ -33,8 +60,14 @@ public class ResUtils {
     public static Drawable getDrawable(int resId) {
         return  ActivityCompat.getDrawable(BaseApp.getInstance(), resId);
     }
+
     public static Drawable getDrawable(String name) {
-        return ActivityCompat.getDrawable(BaseApp.getInstance(),BaseApp.getInstance().getResources().getIdentifier(name, "drawable", BaseApp.getInstance().getPackageName()));
+        return ActivityCompat.getDrawable(
+                BaseApp.getInstance(),
+                BaseApp.getInstance().getResources().getIdentifier(
+                        name,
+                        "drawable",
+                        BaseApp.getInstance().getPackageName()));
     }
 
     public static int getDimensionPixelSize(int resId) {

@@ -3,10 +3,6 @@ package com.nextlive.framework.global;
 import android.app.Application;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.media.MediaPlayer;
-
-import com.nextlive.R;
-
 
 public class BaseApp extends Application {
 

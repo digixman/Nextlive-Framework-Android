@@ -13,7 +13,7 @@ import android.view.MotionEvent;
 import android.view.ScaleGestureDetector;
 
 import com.android.volley.toolbox.NetworkImageView;
-import com.nextlive.R;
+import com.nextlive.framework.R;
 import com.nextlive.framework.util.ResUtils;
 
 public class ZoomableFadeInNetworkImageView extends NetworkImageView {

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Animation -->
-    <item name="nl_anim_duration" type="integer">350</item>
+    <integer name="nl_anim_duration">350</integer>
+    <integer name="nl_anim_bounce_duration">1000</integer>
 
     <!-- nl_back_line_bottom -->
     <color name="nl_back_line_bottom_line">@color/nl_primary</color>

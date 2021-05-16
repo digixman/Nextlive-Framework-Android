@@ -15,7 +15,7 @@ import android.graphics.BitmapFactory;
 import android.util.Log;
 
 import com.android.volley.toolbox.ImageLoader.ImageCache;
-import com.nextlive.BuildConfig;
+import com.nextlive.framework.BuildConfig;
 import com.nextlive.framework.util.disklrucache.DiskLruCache;
 
 /**
